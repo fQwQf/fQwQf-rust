@@ -1,9 +1,7 @@
-fn main() {
-    let mut s = String::from("hello");
+let mut s = String::from("hello");
 
-    change(&mut s);
-}
+let r1 = &s; // 没问题
+let r2 = &s; // 没问题
+let r3 = &mut s; // 大问题
 
-fn change(some_string: &mut String) {
-    some_string.push_str(", world");
-}
+println!("{}, {}, and {}", r1, r2, r3);
