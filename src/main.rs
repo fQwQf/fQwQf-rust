@@ -1,9 +1,8 @@
 fn main() {
-    let mut s = String::from("Hello ");
-
-    s.push_str("rust");
-    println!("追加字符串 push_str() -> {}", s);
-
-    s.push('!');
-    println!("追加字符 push() -> {}", s);
+    let mut string_pop = String::from("rust pop 中文!");
+    let p1 = string_pop.pop();
+    let p2 = string_pop.pop();
+    dbg!(p1);
+    dbg!(p2);
+    dbg!(string_pop);
 }
