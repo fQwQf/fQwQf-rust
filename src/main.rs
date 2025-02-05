@@ -1,9 +1,7 @@
 fn main() {
-    let mut s = String::from("Hello ");
+    let tup = (500, 6.4, 1);
 
-    s.push_str("rust");
-    println!("追加字符串 push_str() -> {}", s);
+    let (x, y, z) = tup;
 
-    s.push('!');
-    println!("追加字符 push() -> {}", s);
+    println!("The value of y is: {}", y);
 }
