@@ -1,13 +1,14 @@
-fn main() {
-    let s1 = String::from("fsafdsa");
-
-    let (s2, len) = calculate_length(s1);
-
-    println!("The length of '{}' is {}.", s2, len);
+#[derive(Debug)]
+struct Rectangle {
+    width: u32,
+    height: u32,
 }
 
-fn calculate_length(s: String) -> (String, usize) {
-    let length = s.len(); // len() 返回字符串的长度
+fn main() {
+    let rect1 = Rectangle {
+        width: 30,
+        height: 50,
+    };
 
-    (s, length)
+    println!("rect1 is {:?}", rect1);
 }
